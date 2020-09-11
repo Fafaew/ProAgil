@@ -12,10 +12,10 @@ namespace ProAgil.Domain
         public int QtdPessoas { get; set; }
         public string ImagemURL { get; set; } 
         public string Telefone { get; set; }
-        public String Email { get; set; }
+        public string Email { get; set; }
         public List<Lote> Lotes { get; set; }
         public List<RedeSocial> RedesSociais { get; set; }
-        public List<PalestranteEvento> palestrantesEventos { get; set; }
+        public List<PalestranteEvento> PalestrantesEventos { get; set; }
 
     }
 }
