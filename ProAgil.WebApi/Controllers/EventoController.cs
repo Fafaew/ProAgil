@@ -54,7 +54,8 @@ namespace ProAgil.WebApi.Controllers
                     var filename = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName;
                     var fullPath = Path.Combine(pathToSave, filename.Replace("\"", " ").Trim());
 
-                    using (var stream = new FileStream(fullPath, FileMode.Create)) {
+                    using (var stream = new FileStream(fullPath, FileMode.Create)) 
+                    {
                         file.CopyTo(stream);
                     }
                 }
